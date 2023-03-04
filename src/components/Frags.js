@@ -49,6 +49,7 @@ function Frags() {
   function handleSubmit(event) {
     event.preventDefault();
     setLoading(true);
+    setFrag(null);
 
     // http://127.0.0.1:8000/
     return fetch("https://fragabs-goxfx5qnca-uc.a.run.app", {
