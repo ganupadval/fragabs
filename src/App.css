@@ -2,156 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  /* border: solid 1px red; */
 }
 
 body {
   overflow: hidden;
-}
-
-:root {
-  --text: #6d6d6d;
-}
-
-.main {
-  height: 100vh;
-  display: flex;
-  overflow: hidden;
-  background-color: rgb(250, 250, 250);
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* -------------- LEFT -------------- */
-
-.left {
-  height: 100%;
-  width: 40%;
-  padding: 0px 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.box {
-  box-shadow: 0 0 8px #dcdcdc;
-  padding: 30px 50px;
-  margin: 50px 0;
-  border-radius: 25px;
-  background-color: #fff;
-}
-
-.left h1 {
-  font-size: 28px;
-  margin: 5px 0;
-}
-
-.left p {
-  color: var(--text);
-  margin-bottom: 10px;
-  font-weight: 300;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-label {
-  color: var(--text);
-  margin: 10px;
-  font-weight: 400;
-}
-
-textarea {
-  border: 0.1px solid var(--text);
-  border-radius: 15px;
-  padding: 20px;
-  resize: none;
-}
-
-input {
-  color: #fff;
-  background-color: #000;
-  margin-top: 15px;
-  width: 100%;
-  padding: 8px 0;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-
-/* -------------- RIGHT -------------- */
-
-.right {
-  height: 100%;
-  width: 60%;
-  padding: 20px;
-}
-
-.bg-image {
-  height: 100%;
-  width: 100%;
-  border-radius: 50px;
-  padding: 30px 50px;
-  /* background: url('../public/WatsonBlog_BERT_NLP_2000x1006_WDDE_1361.jpg'); */
-  background-color: #fff;
-  border: 0.5px solid #dcdcdc;
-  background-size: cover;
-  background-position: center;
-}
-
-.right h3 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* -------------- LOADING SCREEN -------------- */
-
-.loading-main {
-  height: 90%;
-  width: 100%;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.core::after {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.core {
-  /* background-color: #e21111; */
-  background-color: #000;
-  color: #fff;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
   position: relative;
-}
+  height: 100vh;
+  width: 100vw;
+  /*
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+*/
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.75;
-    background-color: #000;
-  }
+  background: #41295a;
+  background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+  background: linear-gradient(to right, #2F0743, #41295a);
 
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-    background-color: #dcdcdc;
-  }
+  /*
+  background: #03001e;
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+  */
+  background-image: linear-gradient(107deg, rgba(9, 0, 53, 1) 28.5%, rgba(83, 81, 162, 1) 81.4%);
 }

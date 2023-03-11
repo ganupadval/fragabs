@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../App.css";
+import "./App.css";
 
 function SetupDoubleClick({ set }) {
   const ref = useRef(null);
@@ -33,6 +33,11 @@ function SetupDoubleClick({ set }) {
       ref.current.style.left = e.pageX - 30 + "px";
       ref.current.style.top = e.pageY - 35 + "px";
       ref.current.style.position = "absolute";
+      ref.current.style.zIndex = "1000";
+      ref.current.style.background = "rgba(255,255,255,0.7)";
+      ref.current.style.color = "#000";
+      ref.current.style.padding = "5px 10px";
+      ref.current.style.borderRadius = "50px";
     });
   }, [Lookup]);
 

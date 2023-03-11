@@ -1,0 +1,79 @@
+.loaderContainer {
+  background-image: linear-gradient(
+    107deg,
+    rgba(9, 0, 53, 1) 28.5%,
+    rgba(83, 81, 162, 1) 81.4%
+  );
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderContainer h1 {
+  /* background-color: red; */
+  font-size: 60px;
+  margin: 0 20px;
+  opacity: 0;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.loaderContainer svg {
+  position: absolute;
+  width: 80px;
+  height: max-content;
+  /* background-color: red; */
+  /* animation: rotate-center 2s cubic-bezier(0.190, 1.000, 0.220, 1.000) 2 both;
+    animation: slide-left 1s ease-in-out both; */
+  animation-name: rotate-center, slide-left;
+  animation-duration: 2s, 1s;
+  animation-timing-function: (0.19, 1, 0.22, 1), ease-in-out;
+  animation-iteration-count: 1, 1;
+  animation-delay: 0s, 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    letter-spacing: 5px;
+    opacity: 1;
+  }
+}
